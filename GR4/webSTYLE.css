@@ -1,5 +1,73 @@
-
-#firstColumn{
-  /*background-color: lightblue;*/
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*Dont change this class, this is how the buttons rows will be in groups of 3*/
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /*background-color: #2196F3;*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Padding to center the top buttons*/
+#topROPE
+{
+  margin-left: 12px;
+}
+/*top button properties*/
+.btnbutton2{
+  display:inline-block;
+  border-radius: 50%;
+  height: 100%;
+/*  width: 40px;*/
+  /*text-align: center;*/
+  border: 1px solid red;
+}
+/*right button (gear)*/
+#RIGHTbut{
+  font-size: 100%;
+  vertical-align: middle;
+  /*padding-bottom: 0.5em;*/
+  /*padding-bottom: 12px;*/
+  /*height: 25px;*/
+  /*text-align: center;*/
+  /*vertical-align: bottom;*/
+}
+/*The top button properties within the row, not the screen, top buttons grid style*/
+#topGRIDhold{
+  background-color: lightgray;
+  padding-left: 0px;
+  padding-right: 0px;
+  /*text-align: center;*/
   /*width: 25%;*/
 }
+/*Used for the title text*/
+.grid-item {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  font-size: 30px;
+  text-align: center;
+}
+/*The top button properties within the row, not the screen,bottom buttons grid style*/
+#botGRIDhold{
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  bottom: 0px;/*The postion reletive to the image*/
+  position: absolute;
+  /*padding-bottom: 0px;*/
+  /*width: 25%;*/
+}
+img{
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+

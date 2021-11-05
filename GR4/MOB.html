@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href=
   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
 <script src=
@@ -11,6 +11,7 @@
 <script src=
   "https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
 
+<link rel="stylesheet" href="webSTYLE.css">
 <script>
 	function callRDY()
 	{
@@ -18,53 +19,29 @@
 	}
 </script>
 
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /*background-color: #2196F3;*/
-  /*padding: 10px;*/
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
-  /*padding: 20px;*/
-  /*font-size: 30px;*/
-  text-align: center;
-}
-</style>
-
 
 </head>
 
 <body>
 <div class="container" id="startScreen">
 
-	  <div class="col-sm-4" id="firstColumn">
-
-      <!-- Column 1 Code Here -->
-      <!-- <tr>
-        <td>  
-            <button onclick="callRDY()" id="LEFTbut" class="btn button2">BUTTON 1</button>
-        </td>
-        
-        <h4 id=titleCOL1> Chicago Commuter </h4>
-        
-        <td>
-            <button onclick="callRDY()" id="RIGHTbut" class="btn button2">BUTTON 2</button>
-        </td>
-      </tr> -->
-      <div class="grid-container">
-        <div class="grid-item"> <button onclick="callRDY()" id="LEFTbut" class="btn button2">BUTTON 1</button> </div>
-        <div class="grid-item"><h4 id=titleCOL1> Chicago Commuter </h4></div>
-        <div class="grid-item"><button onclick="callRDY()" id="RIGHTbut" class="btn button2">BUTTON 2</button></div>
-       <!--  <div class="grid-item"></div>
-        <div class="grid-item"><img src="https://gisgeography.com/wp-content/uploads/2020/06/Chicago-Road-Map-1265x1637.jpg" alt="Girl in a jacket" width="500" height="600"></div>
-        <div class="grid-item"></div> -->
-      </div>
-
-         <!--  <img src="https://gisgeography.com/wp-content/uploads/2020/06/Chicago-Road-Map-1265x1637.jpg" alt="Girl in a jacket" width="500" height="600"> -->
-
+	  <div class="col-sm-4" id="topGRIDhold">
+        <div class="grid-container" id="topROPE">
+          <button onclick="callRDY()" id="LEFTbut" class="btnbutton2">temp</button>
+          <div class="grid-item"><h4 id=titleCOL1> Chicago Commuter </h4></div>
+          <button onclick="callRDY()" id="RIGHTbut" class="btnbutton2">&#9881;</button>
+        </div>
+    </div>
+    <!-- this is conatins the button being ontop of the image -->
+    <div class="button-container"> 
+        <img src="https://gisgeography.com/wp-content/uploads/2020/06/Chicago-Road-Map-1265x1637.jpg" alt="Girl in a jacket" width="500" height="600">
+        <div class="col-sm-4" id="botGRIDhold">
+            <div class="grid-container">
+              <button onclick="callRDY()" id="LEFTbut2" class="btn button2">BUTTON 1</button>
+              <div class="grid-item"><h4 id=titleCOL2></h4></div>
+              <button onclick="callRDY()" id="RIGHTbut2" class="btn button2">BUTTON 2</button>
+            </div>
+        </div>
     </div>
 </div>
 </body>
