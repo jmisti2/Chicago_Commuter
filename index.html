@@ -26,7 +26,7 @@
 
 <body>
 <div class="container" id="startScreen">
-  <div class="col-sm-4" id="topGRIDhold">
+  <div id="topGRIDhold">
       <div class="grid-container" id="topROPE">
         <i style = "font-size: 35px;" class="fa fa-exclamation-circle" aria-hidden="true" id="activity-btn"></i>
         <div class = "search-wrapper">
@@ -51,14 +51,32 @@
       }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK6sTsieht6yFkf-2DDBTnglM1LnBUEK0&callback=initMap"></script>
-    <!-- <div class="col-sm-4" id="botGRIDhold">
-        <div class="grid-container">
-          <button onclick="callRDY()" id="LEFTbut2" class="btn button2">BUTTON 1</button>
-          <div class="grid-item"><h4 id=titleCOL2></h4></div>
-          <button onclick="callRDY()" id="RIGHTbut2" class="btn button2">BUTTON 2</button>
-        </div>
+    
+    <div id = emergency-btn>
+      <i style = "font-size: 35px;" class="fa fa-phone" aria-hidden="true" id="phone-icon"></i>
+      Emergency
     </div>
-  </div> -->
+
+    <div id = "report-btn">
+      <i style = "font-size: 35px;" class="fa fa-pencil" aria-hidden="true" id="pencil-icon"></i>
+      Report
+    </div>
+    
+    <!-- <div id="botGRIDhold">
+        <div class="grid-container">
+          <div id = emergency-btn>
+            <i style = "font-size: 35px;" class="fa fa-phone" aria-hidden="true" id="phone-icon"></i>
+            Emergency
+          </div>
+          <div class="grid-item" id="titleCOL2"></div>
+          <div id = "report-btn">
+            <i style = "font-size: 35px;" class="fa fa-pencil" aria-hidden="true" id="pencil-icon"></i>
+            Report
+          </div>
+          
+        </div>
+    </div> -->
+  </div>
 </div>
 </body>
 

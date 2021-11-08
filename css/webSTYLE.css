@@ -2,8 +2,6 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 /*Dont change this class, this is how the buttons rows will be in groups of 3*/
 .grid-container{
@@ -11,8 +9,6 @@
   grid-template-columns: auto auto auto;
   align-items: center;
   justify-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .search-wrapper{
@@ -23,6 +19,7 @@
   padding-right: 15px;
   width: 100%;
 }
+
 /*Padding to center the top buttons*/
 #topROPE
 {
@@ -49,8 +46,10 @@
 /*The top button properties within the row, not the screen,bottom buttons grid style*/
 #botGRIDhold{
   background-color: transparent;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  width: 100%;
   bottom: 0px;/*The postion reletive to the image*/
   position: absolute;
 }
@@ -63,3 +62,43 @@
   border:1px solid black
 }
 
+#phone-icon{
+  color: red;
+}
+
+#emergency-btn{
+  position:absolute;
+  bottom: 10px;
+  left: 25px;
+  justify-self: left;
+  width: 75px;
+  height: 75px;
+  font-size: 11px;
+  display:flex;
+  align-items: center;
+  flex-flow: column;
+  background-color: white;
+  padding:10px;
+  border-radius: 50%;
+  border:1px solid black;
+  vertical-align: middle;
+}
+
+
+#report-btn{
+  position:absolute;
+  bottom: 10px;
+  right: 25px;
+  justify-self: right;
+  width: 75px;
+  height: 75px;
+  font-size: 11px;
+  display:flex;
+  align-items: center;
+  flex-flow: column;
+  background-color: white;
+  padding:10px;
+  border-radius: 50%;
+  border:1px solid black;
+  vertical-align: middle;
+}
