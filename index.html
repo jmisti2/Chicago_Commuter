@@ -12,6 +12,8 @@
   "https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
 
 <link rel="stylesheet" href="./css/webSTYLE.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <script>
 	function callRDY()
 	{
@@ -24,36 +26,39 @@
 
 <body>
 <div class="container" id="startScreen">
-
-	  <div class="col-sm-4" id="topGRIDhold">
-        <div class="grid-container" id="topROPE">
-          <button onclick="callRDY()" id="LEFTbut" class="btnbutton2">temp</button>
-          <div class="grid-item"><h4 id=titleCOL1> Chicago Commuter </h4></div>
-          <button onclick="callRDY()" id="RIGHTbut" class="btnbutton2">&#9881;</button>
+  <div class="col-sm-4" id="topGRIDhold">
+      <div class="grid-container" id="topROPE">
+        <i style = "font-size: 35px;" class="fa fa-exclamation-circle" aria-hidden="true" id="activity-btn"></i>
+        <div class = "search-wrapper">
+          <input type="text" id = "search-bar" placeholder="Input Destination Address" results = "0">
+          <div class = "fa fa-search" style = "font-size: 25px; color: #585858;"></div>
+        </div>
+        <i style = "font-size: 35px;" class="fa fa-cog" aria-hidden="true" id="settings-btn"></i>
+      </div>
+  </div>
+  <!-- this is conatins the button being ontop of the image -->
+  <div class="outerdiv"> 
+    <div id = "map">
+    </div>
+    <script>
+      function initMap(){
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 13,
+          center: {lat: 41.878113, lng: -87.629799},
+          disableDefaultUI: true,
+          mapId: '5df879b1815c9bab'
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK6sTsieht6yFkf-2DDBTnglM1LnBUEK0&callback=initMap"></script>
+    <!-- <div class="col-sm-4" id="botGRIDhold">
+        <div class="grid-container">
+          <button onclick="callRDY()" id="LEFTbut2" class="btn button2">BUTTON 1</button>
+          <div class="grid-item"><h4 id=titleCOL2></h4></div>
+          <button onclick="callRDY()" id="RIGHTbut2" class="btn button2">BUTTON 2</button>
         </div>
     </div>
-    <!-- this is conatins the button being ontop of the image -->
-    <div class="button-container"> 
-      <div id = "map">
-      </div>>
-      <script>
-        function initMap(){
-          var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 13,
-            center: {lat: 41.878113, lng: -87.629799},
-            disableDefaultUI: true,
-          });
-        }
-      </script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK6sTsieht6yFkf-2DDBTnglM1LnBUEK0&callback=initMap"></script>
-        <div class="col-sm-4" id="botGRIDhold">
-            <div class="grid-container">
-              <button onclick="callRDY()" id="LEFTbut2" class="btn button2">BUTTON 1</button>
-              <div class="grid-item"><h4 id=titleCOL2></h4></div>
-              <button onclick="callRDY()" id="RIGHTbut2" class="btn button2">BUTTON 2</button>
-            </div>
-        </div>
-    </div>
+  </div> -->
 </div>
 </body>
 
