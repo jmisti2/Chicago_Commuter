@@ -63,6 +63,12 @@
   /*padding-bottom: 0px;*/
   /*width: 25%;*/
 }
+
+#map {
+  height: 600px;
+  width: 100%;
+  
+}
 img{
   padding: 0;
   display: block;

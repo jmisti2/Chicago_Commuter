@@ -11,7 +11,7 @@
 <script src=
   "https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
 
-<link rel="stylesheet" href="webSTYLE.css">
+<link rel="stylesheet" href="./css/webSTYLE.css">
 <script>
 	function callRDY()
 	{
@@ -34,7 +34,18 @@
     </div>
     <!-- this is conatins the button being ontop of the image -->
     <div class="button-container"> 
-        <img src="https://gisgeography.com/wp-content/uploads/2020/06/Chicago-Road-Map-1265x1637.jpg" alt="Girl in a jacket" width="500" height="600">
+      <div id = "map">
+      </div>>
+      <script>
+        function initMap(){
+          var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13,
+            center: {lat: 41.878113, lng: -87.629799},
+            disableDefaultUI: true,
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK6sTsieht6yFkf-2DDBTnglM1LnBUEK0&callback=initMap"></script>
         <div class="col-sm-4" id="botGRIDhold">
             <div class="grid-container">
               <button onclick="callRDY()" id="LEFTbut2" class="btn button2">BUTTON 1</button>
