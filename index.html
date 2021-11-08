@@ -13,6 +13,7 @@
 
 <link rel="stylesheet" href="./css/webSTYLE.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
@@ -22,7 +23,7 @@
       <div class="grid-container" id="topROPE">
         <i style = "font-size: 35px;" class="fa fa-exclamation-circle" aria-hidden="true" id="activity-btn"></i>
         <div class = "search-wrapper">
-          <input type="text" id = "search-bar" placeholder="Input Destination Address" results = "0">
+          <input type="text" id = "search-bar" placeholder="Input Destination Address">
           <div class = "fa fa-search" style = "font-size: 25px; color: #666666;"></div>
         </div>
         <i style = "font-size: 35px;" class="fa fa-cog" aria-hidden="true" id="settings-btn"></i>
@@ -56,6 +57,50 @@
     
   </div>
 </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div>
+      <header style = "margin-bottom: 10px; font-size: 20px;">
+        Report Incident
+      </header>
+    </div>
+    <div class="select-row">
+      <div class = "dropdown-wrapper">
+        <input type="checkbox" class="checkbox-round" id = "check1"/>
+        <input type="text" id = "crime-dropdown-input" placeholder="Input Crime">
+        <div class = "dropdown">
+          <button onclick="myFunction()" class="dropbtn"><i class="fa fa-sort-desc" id = "down-icon" aria-hidden="true"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Stabbing</a>
+            <a href="#">Shoplifting</a>
+            <a href="#">Robbery</a>
+          </div>
+        </div>
+      </div>
+      <div class = "dropdown-wrapper">
+        <input type="checkbox" class="checkbox-round" id = "check2"/>
+        Other
+      </div>
+
+    </div>
+    <textarea id = "crime-input">Test</textarea>
+    <div class = "row">
+      <div class = "column">
+        <button type="button" id ="submit-btn">Submit</button>
+      </div>
+      <div class = "column">
+        <button type="button" id ="cancel-btn">Cancel</button>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+
 </body>
 
 <script src ="./js/index-functions.js"></script>
