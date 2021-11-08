@@ -20,6 +20,7 @@
   width: 100%;
 }
 
+
 /*Padding to center the top buttons*/
 #topROPE
 {
@@ -101,4 +102,12 @@
   border-radius: 50%;
   border:1px solid black;
   vertical-align: middle;
+}
+
+#activity-btn{
+  justify-self: left;
+}
+
+#settings-btn{
+  justify-self: right;
 }
