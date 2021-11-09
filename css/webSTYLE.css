@@ -91,6 +91,11 @@
   border-radius: 50%;
   border:1px solid black;
   vertical-align: middle;
+  cursor: pointer;
+}
+
+#emergency-btn:hover{
+  background-color:#DCDCDC;
 }
 
 
@@ -110,14 +115,28 @@
   border-radius: 50%;
   border:1px solid black;
   vertical-align: middle;
+  cursor: pointer;
 }
+
+#report-btn:hover{
+  background-color:#DCDCDC;
+}
+
 
 #activity-btn{
   justify-self: left;
 }
 
+#activity-btn:hover{
+  color: #666666;
+}
+
 #settings-btn{
   justify-self: right;
+}
+
+#settings-btn:hover{
+  color: #666666;
 }
 
 /* The Modal (background) */

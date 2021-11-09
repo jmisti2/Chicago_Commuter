@@ -34,9 +34,13 @@ nobtn.addEventListener('click', function dothis(){
     modal2.style.display = "none";
 });
 
-let settingsBtn = document.getElementById('settings-btn');
-settingsBtn.addEventListener('click', function dothis(){
-    location.href = '/Chicago_Commuter/settings.html';
+
+
+let searchBar = document.getElementById('search-bar');
+searchBar.addEventListener('keypress', function(event){
+    if (event.code === "Enter") {
+        location.href = "/Chicago_Commuter/routing.html"
+      }
 });
 
 /* When the user clicks on the button,
