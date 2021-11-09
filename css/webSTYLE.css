@@ -316,12 +316,14 @@
 #yes-btn{
   width:50%;
   height: 50px;
+  background-color: #DCDCDC;
   border: 1px solid black;
 }
 
 #no-btn{
   width:50%;
   height: 50px;
+  background-color: #DCDCDC;
   border: 1px solid black;
 }
 
