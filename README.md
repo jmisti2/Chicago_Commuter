@@ -5,3 +5,6 @@ Chicago is a great city to live in or travel to, but it is important to be aware
 While living or traveling in Chicago you would want to know where the most dangerous areas are, and how to avoid them. Being able to meet up with others to make your commute safer is also a great option. Having a quick way to contact police or friends/loved ones could potentially save you from being in harm's way. Seeing which CTA busses or train lines have the most dangerous activity can help you to avoid situations that nobody wants to be in. These are only some of the solutions to this massive problem for resident and out of town commuters in Chicago.
 
 [Link to Project Web App](https://jmisti2.github.io/Chicago_Commuter/)
+
+#### Demo Image
+![alt text](https://i.imgur.com/db6ELQK.png)"
