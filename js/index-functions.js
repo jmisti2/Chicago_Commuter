@@ -2,15 +2,16 @@
 
 
 let modal = document.getElementById("myModal");
+let modal2 = document.getElementById("myModal2");
 
-let emergBtn = document.getElementById('emergency-btn');
-emergBtn.addEventListener('click', function dothis(){
+let pencilBtn = document.getElementById('report-btn');
+pencilBtn.addEventListener('click', function dothis(){
     modal.style.display = "block";
 });
 
-let settingsBtn = document.getElementById('settings-btn');
-settingsBtn.addEventListener('click', function dothis(){
-    window.location.href = '/settings.html';
+let emergBtn = document.getElementById('emergency-btn');
+emergBtn.addEventListener('click', function dothis(){
+    modal2.style.display = "block";
 });
 
 let submitBtn = document.getElementById('submit-btn');
@@ -21,6 +22,21 @@ submitBtn.addEventListener('click', function dothis(){
 let cancelBtn = document.getElementById('cancel-btn');
 cancelBtn.addEventListener('click', function dothis(){
     modal.style.display = "none";
+});
+
+let yesbtn = document.getElementById('yes-btn');
+yesbtn.addEventListener('click', function dothis(){
+    modal2.style.display = "none";
+});
+
+let nobtn = document.getElementById('no-btn');
+nobtn.addEventListener('click', function dothis(){
+    modal2.style.display = "none";
+});
+
+let settingsBtn = document.getElementById('settings-btn');
+settingsBtn.addEventListener('click', function dothis(){
+    window.location.href = '/settings.html';
 });
 
 /* When the user clicks on the button,
@@ -56,3 +72,4 @@ check1btn.addEventListener('click', function dothis(){
 check2btn.addEventListener('click', function dothis(){
     check1btn.checked = false;
 });
+
