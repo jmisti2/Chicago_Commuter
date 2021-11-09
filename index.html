@@ -51,12 +51,38 @@
 
     <div id = "report-btn">
       <i style = "font-size: 35px;" class="fa fa-pencil" aria-hidden="true" id="pencil-icon"></i>
-      Report
+      <button id="reportButton" onclick = "openReportMenu()">Report</button>
     </div>
     
+    <div id ="reportPopup">
+      <div id = "mainPopup">
+        <p>
+          TESTING POPUP :)
+        </p>
+        <div id ="closePopup" title="Close Report Menu" onclick ="closeReportMenu()">
+          <p>
+            X
+          </p>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
 </body>
+
+<script>
+  var popupDiv = document.getElementById("reportPopup");
+
+  function openReportMenu(){
+    popupDiv.style.display = "block";
+  }
+
+  function closeReportMenu(){
+    popupDiv.style.display = "none";
+  }
+
+</script>
 
 <script src ="./js/index-functions.js"></script>
 
