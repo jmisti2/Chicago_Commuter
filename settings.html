@@ -26,15 +26,28 @@
 
 <body>
 <div class="container" id="startScreen">
-  <div id="topGRIDhold">
-      <div class="grid-container" id="topROPE">
-        <i style = "font-size: 35px;" class="fa fa-exclamation-circle" aria-hidden="true" id="activity-btn"></i>
-        <div class = "search-wrapper">
-          <input type="text" id = "search-bar" placeholder="Input Destination Address" results = "0">
-          <div class = "fa fa-search" style = "font-size: 25px; color: #585858;"></div>
-        </div>
-        <i style = "font-size: 35px;" class="fa fa-cog" aria-hidden="true" id="settings-btn"></i>
+      <div class="settingsPage">Settings</div>
+      <div class="notifyText">Who to Notify</div>
+      <div class="notifyButtons">
+        <button id="notifyPolice">Police</button>
+        <button id="notifyContacts">Contacts</button>
+        <button id="notifyBoth">Both</button>
       </div>
+      <div class="sendLocationToggle">
+        Send Location?
+        <input type="checkbox" id="switch"class="checkbox" />
+        <label for="switch" class="toggle"></label>
+      </div>
+      <div class="emergencyContacts">
+
+      </div>
+      <div class="smsBox">
+
+      </div>
+      <div class="filterCrimes">
+
+      </div>
+
   </div>
 </div>
 </body>

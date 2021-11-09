@@ -329,3 +329,89 @@
   width: 100%;
   display: flex;
 }
+
+
+/* Settings Page CSS */
+
+/* "Who To Notify" Settings Buttons */
+
+.settingsPage{
+  text-align: center;
+  font-size: xx-large;
+}
+
+.notifyText{
+  text-align: center;
+  font-size: larger;
+  background-color: lightgrey;
+}
+
+.notifyButtons{
+  text-align: center;
+  background-color: lightgrey;
+}
+.sendLocationToggle{
+  text-align: left;
+  background-color: lightgrey;
+}
+
+#notifyPolice{
+  width:140px;
+  height:40px;
+  color: grey;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#notifyContacts{
+  width:140px;
+  height:40px;
+  color: grey;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#notifyBoth{
+  width:140px;
+  height:40px;
+  color: grey;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.toggle {
+  position : relative;
+  display : inline-block;
+  width : 50px;
+  height : 25px;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+
+.toggle:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: gray;
+  top: 1px; 
+  left: 1px;
+  transition:  all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+  left : 25px; 
+}
+      
+.checkbox:checked + .toggle {
+  background-color: black;
+}
+      
+.checkbox { 
+  display : none;
+}
