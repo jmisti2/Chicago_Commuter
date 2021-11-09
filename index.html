@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="stylesheet" href=
   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
 <script src=
@@ -23,7 +23,7 @@
       <div class="grid-container" id="topROPE">
         <i style = "font-size: 35px;" class="fa fa-exclamation-circle" aria-hidden="true" id="activity-btn"></i>
         <div class = "search-wrapper">
-          <input type="text" id = "search-bar" placeholder="Input Destination Address">
+          <input type="text" id = "search-bar" placeholder="Destination Address">
           <div class = "fa fa-search" style = "font-size: 25px; color: #666666;"></div>
         </div>
         <i style = "font-size: 35px;" class="fa fa-cog" aria-hidden="true" id="settings-btn" onclick="location.href='settings.html'"></i>
@@ -41,6 +41,143 @@
           disableDefaultUI: true,
           mapId: '5df879b1815c9bab'
         });
+
+
+        var mark1 = new google.maps.Marker({
+          position: {lat: 41.898120, lng: -87.6389900},
+          map,
+          icon: {
+            url: "./images/warning.svg",
+            scaledSize: new google.maps.Size(20,20)
+          },
+        });
+
+        var infowindow1 = new google.maps.InfoWindow({
+          content: '<div id="content"><header style = "font-weight: bold;">Activity: 0.2 mi</header><div>Armed Robbery</div><div style="color: green;">Tip: Bring Pepper Spray</div></div>',
+        });
+
+        mark1.addListener("click", () => {
+          infowindow1.open({
+            anchor: mark1,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        var mark2 = new google.maps.Marker({
+          position: {lat: 41.874035, lng: -87.623872},
+          map,
+          icon: {
+            url: "./images/warning.svg",
+            scaledSize: new google.maps.Size(20,20)
+          },
+        });
+
+        mark2.addListener("click", () => {
+          infowindow1.open({
+            anchor: mark2,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        var mark3 = new google.maps.Marker({
+          position: {lat: 41.867196, lng: -87.630564},
+          map,
+          icon: {
+            url: "./images/warning.svg",
+            scaledSize: new google.maps.Size(20,20)
+          },
+        });
+
+        mark3.addListener("click", () => {
+          infowindow1.open({
+            anchor: mark3,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        var mark4 = new google.maps.Marker({
+          position: {lat: 41.856073, lng: -87.632023},
+          map,
+          icon: {
+            url: "./images/warning.svg",
+            scaledSize: new google.maps.Size(20,20)
+          },
+        });
+
+        mark4.addListener("click", () => {
+          infowindow1.open({
+            anchor: mark4,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        var mark5 = new google.maps.Marker({
+          position: {lat: 41.871350, lng: -87.642061},
+          map,
+          icon: {
+            url: "./images/warning.svg",
+            scaledSize: new google.maps.Size(20,20)
+          },
+        });
+
+        mark5.addListener("click", () => {
+          infowindow1.open({
+            anchor: mark5,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        var mark6 = new google.maps.Marker({
+          position: {lat: 41.884387, lng: -87.649268},
+          map,
+          icon: {
+            url: "./images/warning.svg",
+            scaledSize: new google.maps.Size(20,20)
+          },
+        });
+
+        mark6.addListener("click", () => {
+          infowindow1.open({
+            anchor: mark6,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        const infowindow = new google.maps.InfoWindow({
+          content: '<div id="content"><header><b>Current Location</b></header></div>',
+        });
+
+        let currentLocation = new google.maps.Marker({
+          position: {lat: 41.884387, lng: -87.634253},
+          map,
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            scale: 10,
+            fillColor: "#1473E6",
+            strokeWeight: 3,
+            strokeColor: "white",
+            fillOpacity: 1,
+          },
+          title: "Current Location",
+
+        });
+
+        currentLocation.addListener("click", () => {
+          infowindow.open({
+            anchor: currentLocation,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        
+
       }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK6sTsieht6yFkf-2DDBTnglM1LnBUEK0&callback=initMap"></script>
