@@ -36,7 +36,7 @@ nobtn.addEventListener('click', function dothis(){
 
 let settingsBtn = document.getElementById('settings-btn');
 settingsBtn.addEventListener('click', function dothis(){
-    window.location.href = '/Chicago_Commuter/settings.html';
+    location.href = '/settings.html';
 });
 
 /* When the user clicks on the button,
