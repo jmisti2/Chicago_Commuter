@@ -40,7 +40,8 @@ let searchBar = document.getElementById('search-bar');
 searchBar.addEventListener('keypress', function(event){
     if (event.code === "Enter") {
         location.href = "/Chicago_Commuter/routing.html"
-      }
+    }
+    console.log(event.code);
 });
 
 /* When the user clicks on the button,
