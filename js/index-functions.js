@@ -37,11 +37,10 @@ nobtn.addEventListener('click', function dothis(){
 
 
 let searchBar = document.getElementById('search-bar');
-searchBar.addEventListener('keypress', function(event){
-    if (event.code === "Enter") {
+searchBar.addEventListener('keyup', function(event){
+    if (event.keyCode === 13) {
         location.href = "/Chicago_Commuter/routing.html"
-    }
-    console.log(event.code);
+      }
 });
 
 /* When the user clicks on the button,
