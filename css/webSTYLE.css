@@ -354,36 +354,31 @@
 
 /* Settings Page CSS */
 
-/* "Who To Notify" Settings Buttons */
-
 .settingsPage{
   text-align: center;
   font-size: xx-large;
 }
 
+/* "Who To Notify" Settings Buttons */
+
+/* "Who to Notify" Text */
 .notifyText{
   text-align: center;
-  font-size: larger;
+  font-size: x-large;
   background-color: lightgrey;
   border-radius: 5px;
   padding-bottom: 20px;
 }
 
+/* Notify Buttons */
 .notifyButtons{
   text-align: center;
   background-color: lightgrey;
   border-radius: 5px;
   padding-bottom: 20px;
 }
-.sendLocationToggle{
-  text-align: left;
-  background-color: lightgrey;
-  border-radius: 5px;
-  margin: 20px 0;
-  padding-bottom: 20px;
-  padding-top: 20px
-}
 
+/* Notify Police Button */
 #notifyPolice{
   width:140px;
   height:40px;
@@ -393,6 +388,7 @@
   cursor: pointer;
 }
 
+/* Notify Contacts Button */
 #notifyContacts{
   width:140px;
   height:40px;
@@ -402,6 +398,7 @@
   cursor: pointer;
 }
 
+/* Notify Both Button */
 #notifyBoth{
   width:140px;
   height:40px;
@@ -411,16 +408,32 @@
   cursor: pointer;
 }
 
+
+/* Send Location DIV CSS */
+.sendLocationToggle{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px
+}
+
+/* centering the Div */
 .sendLocationToggle{
   text-align: center;
 }
 
+/* 'Share Location' Text */
 .sendLocationToggle p{
   display: inline-block;
   text-align: left;
   padding-right: 10px;
+  font-size: larger;
+  font-weight: bold;
 }
 
+/* Toggle Switch CSS */
 .toggle {
   position : absolute;
   display : inline-block;
@@ -432,6 +445,7 @@
   cursor: pointer;
 }
 
+/* Toggle Switch CSS After Click */
 .toggle:after {
   content: '';
   position: absolute;
@@ -454,4 +468,60 @@
       
 .checkbox { 
   display : none;
+}
+
+/* Emergency Contacts CSS */
+
+.emergencyContacts{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.vertical-menu {
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
+  padding-left: 20px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+#contactButton{
+  padding-top: 1px;
+  padding-left: 60px;
+}
+
+#contactButtonStyle{
+  width:140px;
+  height:30px;
+  color: grey;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.smsBox{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: larger;
+  font-weight: bold;
 }
