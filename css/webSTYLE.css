@@ -508,7 +508,8 @@
 #contactButtonStyle{
   width:140px;
   height:30px;
-  color: grey;
+  color: white;
+  background-color:black;
   font-size: large;
   border: 1px solid black;
   cursor: pointer;
@@ -524,4 +525,14 @@
   padding-left: 20px;
   font-size: larger;
   font-weight: bold;
+}
+
+#backButtonStyle{
+  width:140px;
+  height:30px;
+  color: white;
+  background-color:black;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
 }
