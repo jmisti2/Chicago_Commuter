@@ -536,3 +536,59 @@
   border: 1px solid black;
   cursor: pointer;
 }
+
+/* Incidents Page CSS */
+
+#incidentsTitle{
+	text-align: center;
+	font-size: xx-large;
+}
+
+#incidentsList{
+	height: 87vh;
+	width: 100%;
+	margin: 20px;
+	border-radius: 5px;
+	border:1px solid black;
+	justify-content: center;
+	overflow: auto;
+}
+
+.report{
+	height: 5rem;
+	text-align: left;
+  	background-color: lightgrey;
+  	border-radius: 5px;
+  	margin: 10px;
+}
+
+.report:hover{
+	border: 1px solid black;
+}
+
+#repName{
+	text-align:left;
+	padding-left:10px;
+}
+
+#repTime{
+	float: right;
+	padding-right: 10px;
+}
+
+#repLocation{
+	text-align: left;
+	padding-left: 10px;
+}
+
+#repDistance{
+	float: right;
+	padding-right: 10px;
+}
+
+/* Back Button Styling */
+.backButton{
+	margin-left: 2rem;
+	color: white;
+	background-color: black;
+}
