@@ -549,7 +549,7 @@
 	width: 100%;
 	margin: 20px;
 	border-radius: 5px;
-	border:1px solid black;
+	border:2px solid darkgrey;
 	justify-content: center;
 	overflow: auto;
 }
@@ -584,11 +584,4 @@
 #repDistance{
 	float: right;
 	padding-right: 10px;
-}
-
-/* Back Button Styling */
-.backButton{
-	margin-left: 2rem;
-	color: white;
-	background-color: black;
 }
