@@ -537,6 +537,42 @@
   cursor: pointer;
 }
 
+.filterCrimes{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.filterRow{
+  display: flex;
+}
+
+.filterWrapper{
+  display:flex;
+  align-items: center;
+}
+
+#filterCrimeText{
+  background-color: #DCDCDC;
+  font-size: 15px;
+  width: 55%;
+  height: 40px;
+  outline-width: 0;
+  border-width: 1px;
+  padding:10px;
+}
+
+#filterCheck{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 /* Incidents Page CSS */
 
 #incidentsTitle{

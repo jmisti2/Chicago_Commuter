@@ -54,9 +54,30 @@
       </div>
       <div class="smsBox">
         <p>SMS</p>
-        <input type="text" placeholder="Enter Custom Message..."</input>
+        <input type="text" placeholder="Enter Custom Message..."></input>
       </div>
       <div class="filterCrimes">
+        <p>Filter Crimes</p>
+        <div class="filterRow">
+          <div class="filterWrapper">
+            <input type="checkbox" class="checkbox-round" id="filterCheck">
+            <input type="text" id="filterCrimeText" placeholder="Input Crime...">
+            <div class="filterDropdown">
+              <button onclick="myFunction()" class="dropbtn"><i class="fa fa-plus" id = "down-icon" aria-hidden="true"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Stabbing</a>
+                <a href="#">Shoplifting</a>
+                <a href="#">Robbery</a>
+              </div>
+            </div>
+          </div>
+          <div class="filterWrapper">
+            <input type="checkbox" class="checkbox-round" id="filterCheck">
+            All
+          </div>
+
+        </div>
+
       </div>
 			<button id="backButtonStyle" onclick="location.href ='/Chicago_Commuter/index.html'">Back &#8592</button>
   </div>
