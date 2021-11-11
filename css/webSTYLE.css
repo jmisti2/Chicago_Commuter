@@ -583,7 +583,11 @@
 #incidentsList{
 	height: 87vh;
 	width: 100%;
+<<<<<<< Updated upstream
 	margin: 20px;
+=======
+	margin: center;
+>>>>>>> Stashed changes
 	border-radius: 5px;
 	border:2px solid darkgrey;
 	justify-content: center;
@@ -597,7 +601,16 @@
   	border-radius: 5px;
   	margin: 10px;
 }
+<<<<<<< Updated upstream
 
+=======
+.Hlight{
+	height:4rem;
+	width:80%;	
+	text-align: left;
+  	background-color: lightgrey;
+}
+>>>>>>> Stashed changes
 .report:hover{
 	border: 1px solid black;
 }
