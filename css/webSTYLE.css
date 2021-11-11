@@ -630,3 +630,24 @@
 	float: right;
 	padding-right: 10px;
 }
+
+
+.rerouteBox{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#manual-rerout-btn{
+  width:140px;
+  height:80px;
+  background-color: black;
+  color: white;
+  border: 0;
+}
