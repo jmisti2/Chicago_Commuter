@@ -589,8 +589,9 @@
 	margin: center;
 	border-radius: 5px;
 	border:2px solid darkgrey;
-	justify-content: center;
+  align-items: center;
 	overflow: auto;
+  text-align: center;
 }
 
 .collapsible{
