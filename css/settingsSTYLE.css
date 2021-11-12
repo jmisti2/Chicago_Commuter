@@ -202,6 +202,7 @@ input:checked + .slider:before {
   display: block;
   padding: 8px;
   text-decoration: none;
+  font-size: 17px;
 }
 
 .vertical-menu a:hover {
@@ -224,9 +225,7 @@ input:checked + .slider:before {
   background-color: lightgrey;
   border-radius: 5px;
   margin: 10px 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
   font-size: larger;
   font-weight: bold;
 }
