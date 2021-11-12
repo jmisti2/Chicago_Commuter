@@ -675,34 +675,36 @@
 #incidentsList{
 	height: 85vh;
 	width: 100%;
-  padding-top: 3px;
+  	padding-top: 3px;
 	margin: center;
 	border-radius: 5px;
 	border:2px solid darkgrey;
-  align-items: center;
+  	align-items: center;
 	overflow: auto;
-  text-align: center;
+  	text-align: center;
 }
 
 .collapsible{
 	height: 4rem;
 	width: 95%;
-  padding: 5px;
+  	padding: 5px;
 	text-align: left;
-  background-color: lightgrey;
-  border-radius: 5px;
-  margin: 5px;
-  line-height: 85%;
+  	background-color: lightgrey;
+  	border-radius: 5px;
+  	margin: 5px;
+  	line-height: 85%;
 }
 
 .active{
+	height: 6rem;
 	border: 2px solid black;
 }
 
 .content{
-	padding: 0 18px;
+	padding: 0 10px;
 	display: none;
 	overflow: hidden;
+	text-align: left;
 	background-color: lightgrey;
 }
 
