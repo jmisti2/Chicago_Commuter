@@ -529,12 +529,14 @@
 
 #backButtonStyle{
   width:140px;
-  height:30px;
+  height:40px;
   color: white;
   background-color:black;
-  font-size: large;
+  font-size: 20px;
+  align-content: center;
   border: 1px solid black;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .filterCrimes{
@@ -581,8 +583,9 @@
 }
 
 #incidentsList{
-	height: 87vh;
+	height: 85vh;
 	width: 100%;
+  padding-top: 3px;
 	margin: center;
 	border-radius: 5px;
 	border:2px solid darkgrey;
@@ -592,12 +595,13 @@
 
 .collapsible{
 	height: 4rem;
-	width: 100%;
+	width: 95%;
+  padding: 5px;
 	text-align: left;
-  	background-color: lightgrey;
-  	border-radius: 5px;
-  	margin: 5px;
-  	line-height: 85%;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 5px;
+  line-height: 85%;
 }
 
 .active{
