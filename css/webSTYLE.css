@@ -125,6 +125,7 @@
 
 #activity-btn{
   justify-self: left;
+  color: black;
 }
 
 #activity-btn:hover{
@@ -133,6 +134,7 @@
 
 #settings-btn{
   justify-self: right;
+  color: black;
 }
 
 #settings-btn:hover{
