@@ -310,12 +310,12 @@
 }
 
 .checkbox-round {
-  width: 25px;
-  height: 25px;
-  background-color: white;
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
   border-radius: 50%;
   vertical-align: middle;
-  border: 1px solid #ddd;
+  border: 3px solid #ddd;
   appearance: none;
   -webkit-appearance: none;
   outline: none;
@@ -333,8 +333,6 @@
 
 .checkbox-round:checked {
   background-color: black;
-  background-clip: content-box, padding-box;
-  padding: 3px;
 }
 
 
