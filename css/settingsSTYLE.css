@@ -245,6 +245,7 @@ input:checked + .slider:before {
 
 .filterRow{
   display: flex;
+  justify-content: space-between;
 }
 
 .filterWrapper{
