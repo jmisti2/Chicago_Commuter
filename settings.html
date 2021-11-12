@@ -13,6 +13,7 @@
 
 <link rel="stylesheet" href="./css/settingsSTYLE.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 <script>
 	function callRDY()
@@ -27,43 +28,53 @@
 <body>
 <div class="container" id="startScreen">
       <div class="settingsPage">Settings</div>
-      <div class="notifyText"><h4>Who to Notify</h4></div>
-      <div class="notifyButtons">
-        <button id="notifyPolice">Police</button>
-        <button id="notifyContacts">Contacts</button>
-        <button id="notifyBoth">Both</button>
+      <div class="notifyText">
+        <h5>Who to Notify</h5>
+        <div class="notifyButtons">
+          <button id="notifyPolice">Police</button>
+          <button id="notifyContacts">Contacts</button>
+          <button id="notifyBoth">Both</button>
+        </div>
       </div>
+      
       <div class="sendLocationToggle">
-        <p>Share Location?</p>
-        <input type="checkbox" id="switch"class="checkbox"></input>
-        <label for="switch" class="toggle"></label>
+        <div><h5>Share Location?</h5></div>
+        <div>
+          <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label></div>
+
       </div>
       <div class="emergencyContacts">
-        <h4>Emergency Contacts</h4>
-        <div class="vertical-menu">
-          <a href="#">Mom</a>
-          <a href="#">Dad</a>
-          <a href="#">Brother</a>
-          <a href="#">Sister</a>
-          <a href="#">Dog</a>
-          <a href="#">Cat</a>
+        <h5>Emergency Contacts</h5>
+        <div id = contactBox>
+          <div class="vertical-menu">
+            <a href="#">Mom</a>
+            <a href="#">Dad</a>
+            <a href="#">Brother</a>
+            <a href="#">Sister</a>
+            <a href="#">Dog</a>
+            <a href="#">Cat</a>
+          </div>
+          <div id="contactButton">
+            <button id="contactButtonStyle">Edit Contacts<i class="fas fa-user-edit" style="font-size:15px; margin-left:5px;"></i></button>
+          </div>
         </div>
-        <div id="contactButton">
-          <button id="contactButtonStyle"><i class="fa fa-pencil" style="font-size:15px"></i> Edit Contacts</button>
-        </div>
+        
       </div>
       <div class="smsBox">
-        <p>SMS</p>
+        <h5>SMS</h5>
         <input type="text" placeholder="Enter Custom Message..."></input>
       </div>
       <div class="filterCrimes">
-        <p>Filter Crimes</p>
+        <h5>Filter Crimes</h5>
         <div class="filterRow">
           <div class="filterWrapper">
             <input type="checkbox" class="checkbox-round" id="filterCheck">
             <input type="text" id="filterCrimeText" placeholder="Input Crime">
             <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn"><i class="fa fa-sort-desc" id = "down-icon" aria-hidden="true"></i></button>
+              <button onclick="myFunction()" class="dropbtn"><i class="fa fa-plus" id = "down-icon" aria-hidden="true"></i></button>
               <div id="myDropdown" class="dropdown-content">
                 <a href="#">Stabbing</a>
                 <a href="#">Shoplifting</a>
@@ -79,7 +90,7 @@
         </div>
 
       </div>
-			<button id="backButtonStyle" onclick="location.href ='/Chicago_Commuter/index.html'">Back &#8592</button>
+			<button id="backButtonStyle" onclick="location.href ='/Chicago_Commuter/index.html'">Back<i class="fas fa-arrow-left" aria-hidden="true" style ="margin-left: 10px;"></i></button>
   </div>
 </div>
 </body>

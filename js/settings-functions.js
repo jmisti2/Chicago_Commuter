@@ -1,7 +1,5 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-let dropBtn = document.getElementById("down-icon");
-dropBtn.addEventListener('click', myFunction());
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");

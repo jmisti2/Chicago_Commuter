@@ -19,42 +19,50 @@
   font-size: x-large;
   background-color: lightgrey;
   border-radius: 5px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Notify Buttons */
 .notifyButtons{
+  display: flex;
+  padding: 5px 20px 20px 20px;
   text-align: center;
   background-color: lightgrey;
   border-radius: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 /* Notify Police Button */
 #notifyPolice{
-  width:140px;
+  width:33%;
   height:40px;
   color: grey;
   font-size: large;
+  background-color: white;
   border: 1px solid black;
   cursor: pointer;
 }
 
 /* Notify Contacts Button */
 #notifyContacts{
-  width:140px;
+  width:33%;
   height:40px;
   color: grey;
+  background-color: white;
   font-size: large;
   border: 1px solid black;
+  border-right: 0px;
+  border-left: 0px;
   cursor: pointer;
 }
 
 /* Notify Both Button */
 #notifyBoth{
-  width:140px;
+  width:33%;
   height:40px;
   color: grey;
+  background-color: white;
   font-size: large;
   border: 1px solid black;
   cursor: pointer;
@@ -63,88 +71,136 @@
 
 /* Send Location DIV CSS */
 .sendLocationToggle{
-  text-align: left;
+  align-items: center;
+  margin-top:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-top: 10px;
   background-color: lightgrey;
   border-radius: 5px;
-  margin: 20px 0;
-  padding-bottom: 20px;
-  padding-top: 20px
-}
-
-/* centering the Div */
-.sendLocationToggle{
-  text-align: center;
-}
-
-/* 'Share Location' Text */
-.sendLocationToggle p{
-  display: inline-block;
-  text-align: left;
-  padding-right: 10px;
+  display: flex;
+  justify-content:space-between;
   font-size: larger;
   font-weight: bold;
 }
 
-/* Toggle Switch CSS */
-.toggle {
-  position : absolute;
-  display : inline-block;
-  width : 50px;
-  height : 25px;
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: white;
-  border-radius: 30px;
+  -webkit-transition: .4s;
+  transition: .4s;
   border: 2px solid gray;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 3px;
+  background-color: lightgrey;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.checkbox-round {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
   cursor: pointer;
 }
 
-/* Toggle Switch CSS After Click */
-.toggle:after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 19px;
-  border-radius: 50%;
-  background-color: lightgrey;
-  top: 1px; 
-  left: 1px;
-  transition:  all 0.5s;
-}
-
-.checkbox:checked + .toggle::after {
-  left : 25px; 
+.checkbox-round:checked {
+  background-color: white;
+  background: black;
+  background-clip: content-box;
+  padding: 3px;
 }
       
-.checkbox:checked + .toggle {
-  background-color: black;
-}
-      
-.checkbox { 
-  display : none;
-}
 
 /* Emergency Contacts CSS */
 
 .emergencyContacts{
-  text-align: left;
   background-color: lightgrey;
   border-radius: 5px;
-  margin: 20px 0;
+  margin: 10px 0;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 20px;
 }
+
+#contactBox{
+  display: flex;
+  justify-content:space-between;
+  flex-direction:row;
+  margin-right: 20px;
+  align-items: center;
+}
+
 .vertical-menu {
-  width: 200px;
-  height: 150px;
+  width: 140px;
+  height: 80px;
   overflow-y: auto;
-  padding-left: 20px;
 }
 
 .vertical-menu a {
-  background-color: #eee;
+  background-color: white;
   color: black;
   display: block;
-  padding: 12px;
+  padding: 8px;
   text-decoration: none;
 }
 
@@ -152,26 +208,22 @@
   background-color: #ccc;
 }
 
-#contactButton{
-  padding-top: 1px;
-  padding-left: 60px;
-}
-
 #contactButtonStyle{
-  width:140px;
-  height:30px;
+  width:150px;
+  height:35px;
   color: white;
   background-color:black;
   font-size: large;
   border: 1px solid black;
   cursor: pointer;
+  padding: 5px;
 }
 
 .smsBox{
   text-align: left;
   background-color: lightgrey;
   border-radius: 5px;
-  margin: 20px 0;
+  margin: 10px 0;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 20px;
@@ -183,7 +235,7 @@
   text-align: left;
   background-color: lightgrey;
   border-radius: 5px;
-  margin: 20px 0;
+  margin: 10px 0;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 20px;
@@ -198,6 +250,7 @@
 .filterWrapper{
   display:flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 #filterCrimeText{
@@ -212,7 +265,6 @@
 
 #filterCheck{
   margin-right: 10px;
-  margin-left: 10px;
 }
 
 /* Dropdown Button */
@@ -250,6 +302,8 @@
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: 15px;
+  font-weight: normal;
   z-index: 1;
 }
 
@@ -276,5 +330,5 @@
   align-content: center;
   border: 1px solid black;
   cursor: pointer;
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
