@@ -1,0 +1,280 @@
+/* Settings Page CSS */
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settingsPage{
+  text-align: center;
+  font-size: xx-large;
+}
+
+/* "Who To Notify" Settings Buttons */
+
+/* "Who to Notify" Text */
+.notifyText{
+  text-align: center;
+  font-size: x-large;
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+/* Notify Buttons */
+.notifyButtons{
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+/* Notify Police Button */
+#notifyPolice{
+  width:140px;
+  height:40px;
+  color: grey;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Notify Contacts Button */
+#notifyContacts{
+  width:140px;
+  height:40px;
+  color: grey;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Notify Both Button */
+#notifyBoth{
+  width:140px;
+  height:40px;
+  color: grey;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+
+/* Send Location DIV CSS */
+.sendLocationToggle{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px
+}
+
+/* centering the Div */
+.sendLocationToggle{
+  text-align: center;
+}
+
+/* 'Share Location' Text */
+.sendLocationToggle p{
+  display: inline-block;
+  text-align: left;
+  padding-right: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* Toggle Switch CSS */
+.toggle {
+  position : absolute;
+  display : inline-block;
+  width : 50px;
+  height : 25px;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid gray;
+  cursor: pointer;
+}
+
+/* Toggle Switch CSS After Click */
+.toggle:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  top: 1px; 
+  left: 1px;
+  transition:  all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+  left : 25px; 
+}
+      
+.checkbox:checked + .toggle {
+  background-color: black;
+}
+      
+.checkbox { 
+  display : none;
+}
+
+/* Emergency Contacts CSS */
+
+.emergencyContacts{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.vertical-menu {
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
+  padding-left: 20px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+#contactButton{
+  padding-top: 1px;
+  padding-left: 60px;
+}
+
+#contactButtonStyle{
+  width:140px;
+  height:30px;
+  color: white;
+  background-color:black;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.smsBox{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.filterCrimes{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.filterRow{
+  display: flex;
+}
+
+.filterWrapper{
+  display:flex;
+  align-items: center;
+}
+
+#filterCrimeText{
+  background-color: #DCDCDC;
+  font-size: 15px;
+  width: 55%;
+  height: 40px;
+  outline-width: 0;
+  border-width: 1px;
+  padding:10px;
+}
+
+#filterCheck{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Dropdown Button */
+.dropbtn,.dropbtn:focus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DCDCDC;
+  color: #666666;
+  font-size: 20px;
+  cursor: pointer;
+  outline-width: 0;
+  border-width: 1px;
+  height: 40px;
+  width: 40px;
+  border-left: 0px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #b4b4b4;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#backButtonStyle{
+  width:140px;
+  height:40px;
+  color: white;
+  background-color:black;
+  font-size: 20px;
+  align-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 5px;
+}

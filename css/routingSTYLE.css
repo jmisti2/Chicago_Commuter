@@ -1,0 +1,139 @@
+/* Routing Page CSS */
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*The top button properties within the row, not the screen, top buttons grid style*/
+#topGRIDhold{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.search-wrapper{
+  display: flex;
+  align-items: center;
+  background-color: #DCDCDC;
+  border-radius: 17px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+#search-bar{
+  color: #666666;
+  padding-left: 10px;
+  background: transparent;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  outline-width: 0;
+  border-width: 0px;
+}
+
+.rerouteBox{
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.row2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row3{
+  width: 100%;
+  display: flex;
+  align-items:baseline;
+  column-gap: 5px;
+}
+
+#repName{
+	text-align: left;
+	padding-left: 10px;
+}
+
+#repTime{
+	float: right;
+	padding-right: 10px;
+}
+
+#manual-rerout-btn{
+  width:140px;
+  height:60px;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  border: 0;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  margin-top: 10px;
+  float: right;
+}
+
+.routingList{
+	height: 63vh;
+	width: 100%;
+	margin: center;
+	border:1px solid black;
+  align-items: center;
+	overflow: auto;
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 12px;
+}
+
+#reroute-btn{
+  width:110px;
+  height:40px;
+  background-color: black;
+  color: white;
+  border: 0;
+  float: right;
+}
+
+#repName2{
+  display: flex;
+  justify-content:space-between;
+	align-items: baseline;
+  margin-bottom: 0px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#timesort-btn{
+  width:50%;
+  height: 50px;
+  background-color: #DCDCDC;
+  border: 1px solid black;
+  border-bottom: 0px;
+  outline-color: black;
+}
+
+#safetysort-btn{
+  width:50%;
+  height: 50px;
+  background-color: #DCDCDC;
+  border: 1px solid black;
+  border-bottom: 0px;
+  outline-color: black;
+}
+
+#backButtonStyle{
+  width:140px;
+  height:40px;
+  color: white;
+  background-color:black;
+  font-size: 20px;
+  align-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 5px;
+}

@@ -1,0 +1,80 @@
+/* Incidents Page CSS */
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#incidentsTitle{
+	text-align: center;
+	font-size: xx-large;
+}
+
+#incidentsList{
+	height: 85vh;
+	width: 100%;
+  	padding-top: 3px;
+	margin: center;
+	border-radius: 5px;
+	border:2px solid darkgrey;
+  	align-items: center;
+	overflow: auto;
+  	text-align: center;
+}
+
+.collapsible{
+	height: 4rem;
+	width: 95%;
+  	padding: 5px;
+	text-align: left;
+  	background-color: lightgrey;
+  	border-radius: 5px;
+  	margin: 5px;
+  	line-height: 85%;
+}
+
+.active{
+	height: 6rem;
+	border: 2px solid black;
+}
+
+.content{
+	padding: 0 10px;
+	display: none;
+	overflow: hidden;
+	text-align: left;
+	background-color: lightgrey;
+}
+
+#repName{
+	text-align: left;
+	padding-left: 10px;
+}
+
+#repTime{
+	float: right;
+	padding-right: 10px;
+}
+
+#repLocation{
+	text-align: left;
+	padding-left: 10px;
+}
+
+#repDistance{
+	float: right;
+	padding-right: 10px;
+}
+
+#backButtonStyle{
+  width:140px;
+  height:40px;
+  color: white;
+  background-color:black;
+  font-size: 20px;
+  align-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 5px;
+}
