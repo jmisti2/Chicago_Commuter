@@ -98,7 +98,6 @@
   background-color:#DCDCDC;
 }
 
-
 #report-btn{
   position:absolute;
   bottom: 10px;
@@ -116,6 +115,7 @@
   border:1px solid black;
   vertical-align: middle;
   cursor: pointer;
+
 }
 
 #report-btn:hover{
@@ -191,7 +191,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  border:0px;
+  border: 1px solid black;
 }
 
 /* The Close Button */
@@ -245,6 +245,7 @@
   border-width: 1px;
   height: 40px;
   width: 40px;
+  border-left: 0px;
 }
 
 /* Dropdown button on hover & focus */
@@ -292,6 +293,7 @@
   outline-width: 0;
   border-width: 1px;
   padding:10px;
+  border-radius: 0px;
 }
 
 .select-row{
@@ -329,6 +331,8 @@
 
 .checkbox-round:checked {
   background-color: black;
+  background-clip: content-box, padding-box;
+  padding: 3px;
 }
 
 
@@ -336,14 +340,19 @@
   width:50%;
   height: 50px;
   background-color: #DCDCDC;
-  border: 1px solid black;
+  border-radius: 0px 0px 0px 10px;
+  border: 0px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
 }
 
 #no-btn{
   width:50%;
   height: 50px;
   background-color: #DCDCDC;
-  border: 1px solid black;
+  border: 0px;
+  border-radius: 0px 0px 10px 0px;
+  border-top: 1px solid black;
 }
 
 .row2{
@@ -412,6 +421,24 @@
   margin-bottom: 0px;
   padding-left:10px;
   padding-right:10px;
+}
+
+#timesort-btn{
+  width:50%;
+  height: 50px;
+  background-color: #DCDCDC;
+  border: 1px solid black;
+  border-bottom: 0px;
+  outline-color: black;
+}
+
+#safetysort-btn{
+  width:50%;
+  height: 50px;
+  background-color: #DCDCDC;
+  border: 1px solid black;
+  border-bottom: 0px;
+  outline-color: black;
 }
 
 
