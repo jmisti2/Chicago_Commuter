@@ -260,13 +260,14 @@ input:checked + .slider:before {
 }
 
 #filterCrimeText{
-  background-color: #DCDCDC;
-  font-size: 15px;
+  background-color: white;
   width: 55%;
+  font-size: 16px;
   height: 40px;
   outline-width: 0;
   border-width: 1px;
   padding:10px;
+  margin-right: -1px;
 }
 
 #filterCheck{
@@ -286,7 +287,6 @@ input:checked + .slider:before {
   border-width: 1px;
   height: 40px;
   width: 40px;
-  border-left: 0px;
 }
 
 /* Dropdown button on hover & focus */
