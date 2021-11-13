@@ -15,22 +15,25 @@
 	height: 85vh;
 	width: 100%;
   	padding-top: 3px;
+	padding-right: 13px;
 	margin: center;
-	border-radius: 5px;
-	border:2px solid darkgrey;
-  	align-items: center;
+	border:1px solid black;
+  	align-items: left;
 	overflow: auto;
-  	text-align: center;
 }
 
 .collapsible{
 	height: 4rem;
-	width: 95%;
+	width: 100%;
   	padding: 5px;
+	padding-top: 10px;
 	text-align: left;
-  	background-color: lightgrey;
+  	background-color: #DCDCDC;
   	border-radius: 5px;
+	border: 0px;
   	margin: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
   	line-height: 85%;
 }
 
@@ -39,12 +42,13 @@
 	border: 2px solid black;
 }
 
-.content{
+.content {
 	padding: 0 10px;
 	display: none;
 	overflow: hidden;
 	text-align: left;
-	background-color: lightgrey;
+	height: 20px;
+	background-color: transparent;
 }
 
 #repName{
