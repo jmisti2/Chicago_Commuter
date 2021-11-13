@@ -15,18 +15,23 @@
 
 /* "Who to Notify" Text */
 .notifyText{
-  text-align: center;
+  text-align: left;
   font-size: x-large;
   background-color: lightgrey;
   border-radius: 5px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.notifyText h4{
+  margin-left: 20px;
 }
 
 /* Notify Buttons */
 .notifyButtons{
   display: flex;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 20px 20px 0px;
   text-align: center;
   background-color: lightgrey;
   border-radius: 5px;
