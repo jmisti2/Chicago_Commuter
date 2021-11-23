@@ -22,6 +22,7 @@
   padding-top: 10px;
   padding-bottom: 15px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .notifyText h4{
@@ -31,11 +32,10 @@
 /* Notify Buttons */
 .notifyButtons{
   display: flex;
-  padding: 5px 20px 20px 0px;
+  padding-top: 5px;
   text-align: center;
   background-color: lightgrey;
   border-radius: 5px;
-  padding-bottom: 0px;
 }
 
 /* Notify Police Button */
@@ -48,7 +48,6 @@
   border: 1px solid black;
   cursor: pointer;
   outline: 0px;
-  margin-right: -1px;
 }
 
 /* Notify Contacts Button */
@@ -61,7 +60,6 @@
   border: 1px solid black;
   cursor: pointer;
   outline: 0px;
-  margin-right: -1px;
 }
 
 /* Notify Both Button */

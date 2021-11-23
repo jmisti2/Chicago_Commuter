@@ -1,14 +1,11 @@
 
-let timebtn = document.getElementById('timesort-btn');
-let safetybtn = document.getElementById('safetysort-btn');
 
+let reroute = document.getElementsByClassName("reroute-btn");
 
-timebtn.addEventListener('click', function(){
-    timebtn.style.background = "#DCDCDC";
-    safetybtn.style.background = "white";
-});
-
-safetybtn.addEventListener('click', function(){
-    safetybtn.style.background = "#DCDCDC";
-    timebtn.style.background = "white";
-});
+for(var i = 0; i < reroute.length; i++){
+    reroute[i].addEventListener('click', function(){
+        console.log(sessionStorage.route);
+        sessionStorage.route = true;
+        location = "/Chicago_Commuter/index.html";
+    })
+}

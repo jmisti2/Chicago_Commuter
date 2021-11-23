@@ -1,6 +1,4 @@
 //Styling for index.html
-
-
 let modal = document.getElementById("myModal");
 let modal2 = document.getElementById("myModal2");
 
@@ -40,6 +38,7 @@ let searchBar = document.getElementById('search-bar');
 searchBar.addEventListener('keyup', function(event){
     if (event.key == 'Enter') {
         location.href = "/Chicago_Commuter/routing.html"
+        sessionStorage.route = false;
     }
 });
 
@@ -76,4 +75,6 @@ check1btn.addEventListener('click', function dothis(){
 check2btn.addEventListener('click', function dothis(){
     check1btn.checked = false;
 });
+
+
 
