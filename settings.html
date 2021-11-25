@@ -20,6 +20,11 @@
 	{
 		alert("TESTING functionality");
 	}
+	function focusBTN()
+	{
+		document.getElementById("editBTN").hidden = false;
+		document.getElementById("editBTN").focus();
+	}
 </script>
 
 
@@ -50,15 +55,16 @@
         <h5 style="margin-bottom:10px;">Emergency Contacts</h5>
         <div id = contactBox>
           <div class="vertical-menu">
-            <a href="#"><i class="fa fa-user" style="font-size:15px; margin-right:8px;"></i>Mom</a>
+           <div class="holdbtn"><a href="#"><i class="fa fa-user" style="font-size:15px; margin-right:8px;"></i>Mom</a></div>
             <a href="#"><i class="fa fa-user" style="font-size:15px; margin-right:8px;"></i>Dad</a>
             <a href="#"><i class="fa fa-user" style="font-size:15px; margin-right:8px;"></i>Brother</a>
             <a href="#"><i class="fa fa-user" style="font-size:15px; margin-right:8px;"></i>Sister</a>
             <a href="#"><i class="fa fa-user" style="font-size:15px; margin-right:8px;"></i>Dog</a>
             <a href="#"><i class="fa fa-user" style="font-size:15px; margin-right:8px;"></i>Cat</a>
+            <input type="text" id="editBTN" hidden="true"/>
           </div>
           <div id="contactButton">
-            <button id="contactButtonStyle">Edit Contacts<i class="fas fa-user-edit" style="font-size:15px; margin-left:5px;"></i></button>
+            <button id="contactButtonStyle" onclick="focusBTN()">Edit Contacts<i class="fas fa-user-edit" style="font-size:15px; margin-left:5px;"></i></button>
           </div>
         </div>
         
