@@ -4,14 +4,6 @@ let policebtn = document.getElementById("notifyPolice");
 let contactbtn = document.getElementById("notifyContacts");
 let bothbtn = document.getElementById("notifyBoth");
 
-let notifyArr = [policebtn, contactbtn, bothbtn];
-
-// for(var i = 0; i < notifyArr.length; i++){
-//     notifyArr[i].addEventListener('click', function(){
-//         notifyArr[i].style.border="3px solid black"
-//     });
-// }
-
 policebtn.addEventListener('click', function(){
     policebtn.style.borderWidth="3px"
     contactbtn.style.borderWidth="1px"
@@ -51,6 +43,8 @@ window.onclick = function(event) {
         }
     }
 }
+
+//contacts list stuff
 
 let modal = document.getElementById("myModal");
 
@@ -114,6 +108,17 @@ cancelBtn.addEventListener('click', function dothis(){
     modal.style.display = "none";
 });
 
+//end
 
+let smsInput = document.getElementById("smsInput");
+
+let saveBtn = document.getElementById("save-btn");
+saveBtn.addEventListener('click', function dothis(){
+    sessionStorage.setItem('sms', smsInput.value);
+});
+
+if(sessionStorage.getItem('sms') != null){
+    smsInput.value = sessionStorage.getItem('sms');
+}
 
 

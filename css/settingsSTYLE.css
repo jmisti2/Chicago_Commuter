@@ -423,3 +423,10 @@ input:checked + .slider:before {
   font-size: 15px;
   margin-right: 8px;
 }
+
+#save-btn{
+  width:20%;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
