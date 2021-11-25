@@ -347,7 +347,7 @@ input:checked + .slider:before {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  padding-top: 25vh;
+  padding-top: 160px;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -388,6 +388,7 @@ input:checked + .slider:before {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin:0px;
 }
 
 .modalrow{
@@ -429,4 +430,13 @@ input:checked + .slider:before {
   background-color: black;
   color: white;
   border: 1px solid black;
+}
+
+.endrow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
 }
