@@ -360,7 +360,7 @@ input:checked + .slider:before {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 250px;
+  height: 300px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -430,6 +430,8 @@ input:checked + .slider:before {
   background-color: black;
   color: white;
   border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
 }
 
 .endrow{
