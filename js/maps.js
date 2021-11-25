@@ -29,10 +29,11 @@ window.initMap = function() {
       });
     }
 
-    console.log(sessionStorage.route);
+    console.log(sessionStorage.getItem('route'));
     
-    if(sessionStorage.route){
-        calcRoute();
+    if(sessionStorage.getItem('route') == "true"){
+      console.log('test')
+      calcRoute();
     }
 
     var mark1 = new google.maps.Marker({

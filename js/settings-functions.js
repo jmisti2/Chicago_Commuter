@@ -51,3 +51,69 @@ window.onclick = function(event) {
         }
     }
 }
+
+let modal = document.getElementById("myModal");
+
+let contactBtn = document.getElementById('contactButtonStyle');
+contactBtn.addEventListener('click', function dothis(){
+    modal.style.display = "block";
+});
+
+let submitBtn = document.getElementById('submit-btn');
+let contactInput = document.getElementById('contactInput');
+let contactList = document.getElementById('contactList');
+
+if(sessionStorage.getItem('contactList') == null){
+    sessionStorage.setItem('contactList', JSON.stringify(['Mom']));
+}
+
+if(sessionStorage.getItem('contactList') == null){
+    
+}
+else{
+    contacts = JSON.parse(sessionStorage.getItem('contactList'))
+    for(var i = 0; i < contacts.length; i++){
+        addContact(contacts[i])
+    }
+}
+
+function addContact(input){
+    let a = document.createElement('a');
+    let i = document.createElement('i')
+    let i2 = document.createElement('i')
+    i.setAttribute('class', 'fa fa-user');
+    i2.setAttribute('class', 'fa fa-minus-circle')
+    i2.style.float = 'right';
+    i2.style.marginTop = '6px';
+    i2.style.color = '#666666';
+    i2.addEventListener('click', function(){
+        a.remove();
+    });
+    a.setAttribute('href', '#');
+    a.innerText = input;
+    a.prepend(i);
+    a.append(i2);
+    contactList.appendChild(a);
+}
+
+submitBtn.addEventListener('click', function(){
+    modal.style.display = "none";
+    input = contactInput.value.charAt(0).toUpperCase() + contactInput.value.slice(1);
+    contactInput.value = '';
+    addContact(input);
+    contacts.push(input);
+    sessionStorage.setItem('contactList', JSON.stringify(contacts))
+
+    var nodes = Array.prototype.slice.call(document.getElementById('contactList').children );
+    console.log(nodes);
+});
+
+
+let cancelBtn = document.getElementById('cancel-btn');
+cancelBtn.addEventListener('click', function dothis(){
+    modal.style.display = "none";
+});
+
+
+
+

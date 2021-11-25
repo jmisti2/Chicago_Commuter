@@ -38,7 +38,7 @@ let searchBar = document.getElementById('search-bar');
 searchBar.addEventListener('keyup', function(event){
     if (event.key == 'Enter') {
         location.href = "/Chicago_Commuter/routing.html"
-        sessionStorage.route = false;
+        sessionStorage.setItem('route', "false");
     }
 });
 

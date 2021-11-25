@@ -196,6 +196,7 @@ input:checked + .slider:before {
 .vertical-menu {
   width: 140px;
   height: 80px;
+  background-color: white;
   overflow-y: auto;
 }
 
@@ -335,4 +336,90 @@ input:checked + .slider:before {
   border: 1px solid black;
   cursor: pointer;
   margin-bottom: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding-top: 25vh;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-btn{
+  width:120px;
+  height:40px;
+  background-color: black;
+  color: white;
+  border: 0;
+}
+
+#cancel-btn{
+  width:120px;
+  height:40px;
+  background-color: black;
+  color: white;
+  border: 0;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalrow{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contactInput{
+  border: 1px solid;
+  background-color: #DCDCDC;
+  width: 70%;
+  padding-left: 5px;
+  height: 40px;
+}
+
+#phoneInput{
+  border: 1px solid;
+  background-color: #DCDCDC;
+  width: 70%;
+  padding-left: 5px;
+  height: 40px;
+}
+
+.modaltitle{
+  font-weight: bold;
+}
+
+#contactList i{
+  font-size: 15px;
+  margin-right: 8px;
 }
