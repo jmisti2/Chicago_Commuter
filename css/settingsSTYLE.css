@@ -432,6 +432,7 @@ input:checked + .slider:before {
   border: 1px solid black;
   text-align: center;
   cursor: pointer;
+  padding: 0px;
 }
 
 .endrow{
