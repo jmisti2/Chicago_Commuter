@@ -15,10 +15,46 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+<script>
+	function callRDY()
+	{
+		alert("TESTING functionality ");
+	}
+</script>
+
 </head>
+<script src ="./js/settings-functions.js"></script>
+
 
 <body>
 <div class="container" id="startScreen">
+
+
+	  <div class="filterCrimes">
+        <h5>Priortize Crimes</h5>
+        <div class="filterRow">
+          <div class="filterWrapper">
+            <input type="text" id="filterCrimeText" placeholder="No Priority" style = 'background-color: #DCDCDC;' disabled>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn" href="#">
+              <i class="fa fa-sort-desc" id ="down-icon" aria-hidden="true" style = "pointer-events: none;"></i>
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Stabbing</a>
+                <a href="#">Shoplifting</a>
+                <a href="#">Robbery</a>
+                <a href="#" color="red" onclick='callRDY()'>No priority</a>
+              </div>
+            </div>
+          </div>
+          <div class = "row2">
+					    <button type="button" id ="timesort-btn" style = 'background-color: #DCDCDC;'>Time</button>
+					    <button type="button" id ="safetysort-btn" style = "background-color: white;">Safety</button>
+					</div>
+        </div>
+      </div>
+
+
 	<div id="incidentsTitle">Nearby Incidents</div>	
 	<div class="container" id="incidentsList">
 		<button type="button" class="collapsible">
@@ -106,5 +142,22 @@
 </body>
 
 <script src ="./js/incidents-functions.js"></script>
+<script>
+  sessionStorage.route = false;
 
+  let timebtn = document.getElementById('timesort-btn');
+  let safetybtn = document.getElementById('safetysort-btn');
+
+
+  timebtn.addEventListener('click', function(){
+      timebtn.style.background = "#DCDCDC";
+      safetybtn.style.background = "white";
+  });
+
+  safetybtn.addEventListener('click', function(){
+      safetybtn.style.background = "#DCDCDC";
+      timebtn.style.background = "white";
+  });
+</script>
+<script src ="./js/routing-functions.js" type="module"></script>
 </html>
