@@ -28,34 +28,36 @@
 
 <body>
 <div class="container" id="startScreen">
+	
 
 
-	  <div class="filterCrimes">
-        <h5>Priortize Crimes</h5>
-        <div class="filterRow">
-          <div class="filterWrapper">
-            <input type="text" id="filterCrimeText" placeholder="No Priority" style = 'background-color: #DCDCDC;' disabled>
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn" href="#">
-              <i class="fa fa-sort-desc" id ="down-icon" aria-hidden="true" style = "pointer-events: none;"></i>
-              </button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">Stabbing</a>
-                <a href="#">Shoplifting</a>
-                <a href="#">Robbery</a>
-                <a href="#" color="red" onclick='callRDY()'>No priority</a>
-              </div>
-            </div>
-          </div>
-          <div class = "row2">
-					    <button type="button" id ="timesort-btn" style = 'background-color: #DCDCDC;'>Time</button>
-					    <button type="button" id ="safetysort-btn" style = "background-color: white;">Safety</button>
+	
+
+
+	<div id="incidentsTitle" style = "margin-top: 10px;">Nearby Incidents</div>	
+	<div class="filterCrimes">
+		<div class="filterRow">
+			<h5>Prioritize Crimes</h5>
+			<div class="filterWrapper">
+				<input type="text" id="filterCrimeText" placeholder="No Priority" style = 'background-color: #DCDCDC;' disabled>
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn" href="#">
+						<i class="fa fa-sort-desc" id ="down-icon" aria-hidden="true" style = "pointer-events: none;"></i>
+						</button>
+						<div id="myDropdown" class="dropdown-content">
+						<a href="#">Stabbing</a>
+						<a href="#">Shoplifting</a>
+						<a href="#">Robbery</a>
+						<a href="#" color="red" onclick='callRDY()'>No priority</a>
+						</div>
 					</div>
-        </div>
-      </div>
-
-
-	<div id="incidentsTitle">Nearby Incidents</div>	
+			</div>
+		</div>
+	</div>
+	<div class = "row2">
+		<button type="button" id ="timesort-btn" style = 'background-color: #DCDCDC;'>Time</button>
+		<button type="button" id ="safetysort-btn" style = "background-color: white;">Safety</button>
+    </div>
 	<div class="container" id="incidentsList">
 		<button type="button" class="collapsible">
 			<p id="repName">Sexual Assaut<span id="repTime">17 min ago</span></p>

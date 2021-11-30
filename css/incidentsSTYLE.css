@@ -12,7 +12,7 @@
 }
 
 #incidentsList{
-	height: 85vh;
+	height: 65vh;
 	width: 100%;
   	padding-top: 3px;
 	padding-right: 13px;
@@ -86,32 +86,29 @@
 
 
 .filterCrimes{
-  text-align: left;
+  margin-top: 10px;
   background-color: lightgrey;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
   font-size: larger;
   font-weight: bold;
+  border: 1px solid black;
+  padding: 10px;
 }
 
 .filterRow{
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .filterWrapper{
   display:flex;
   align-items: center;
-  margin-right: 20px;
   font-weight: normal;
 }
 
 #filterCrimeText{
   background-color: white;
-  width: 55%;
+  width: 110px;
   font-size: 16px;
   height: 40px;
   outline-width: 0;
@@ -176,23 +173,6 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-
-.checkbox-round {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 3px solid white;
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.checkbox-round:checked {
-  background-color: black;
-}
 
 
 .row2{
