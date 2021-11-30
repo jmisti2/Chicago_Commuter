@@ -36,11 +36,12 @@
   text-align: center;
   background-color: lightgrey;
   border-radius: 5px;
+  justify-content: space-around;
 }
 
 /* Notify Police Button */
 #notifyPolice{
-  width:33%;
+  width:33.3%;
   height:40px;
   color: grey;
   font-size: large;
@@ -52,7 +53,7 @@
 
 /* Notify Contacts Button */
 #notifyContacts{
-  width:33%;
+  width:33.3%;
   height:40px;
   color: grey;
   background-color: white;
@@ -64,7 +65,7 @@
 
 /* Notify Both Button */
 #notifyBoth{
-  width:33%;
+  width:33.3%;
   height:40px;
   color: grey;
   background-color: white;
