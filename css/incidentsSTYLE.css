@@ -11,7 +11,18 @@
 	font-size: xx-large;
 }
 
-[id^="incidentsList"]{
+#incidentsList-timeNP{
+	height: 65vh;
+	width: 100%;
+  	padding-top: 3px;
+	padding-right: 13px;
+	margin: center;
+	border:1px solid black;
+  	align-items: left;
+	overflow: auto;
+}
+
+#incidentsList-distanceNP{
 	height: 65vh;
 	width: 100%;
   	padding-top: 3px;
