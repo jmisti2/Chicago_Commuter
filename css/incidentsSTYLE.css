@@ -11,7 +11,7 @@
 	font-size: xx-large;
 }
 
-#incidentsList{
+[id^="incidentsList"]{
 	height: 65vh;
 	width: 100%;
   	padding-top: 3px;

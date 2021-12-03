@@ -14,3 +14,45 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+/*
+$(".dropdown-content a").click(function(){
+  $(this).parents(".filterCrimeText").placeholder($(this).text());
+});
+*/
+
+var lists = document.querySelectorAll('[id^="incidentsList"]');
+/*
+var page;
+var sorting;
+var priority='NP';
+*/
+
+function sortTimeNP() {
+	for (i = 0; i < lists.length; i++) {
+		lists[i].style.display = "none";
+	}
+	//page = 'incidentsList-'+ sorting + priority;
+	var show = document.querySelector('#incidentsList-timeNP');
+	show.style.display = "block";
+}
+
+function sortDistanceNP() {
+	for (i = 0; i < lists.length; i++) {
+		lists[i].style.display = "none";
+	}
+	//page = 'incidentsList-'+ sorting + priority;
+	var show = document.querySelector('#incidentsList-distanceNP');
+	show.style.display = "block";
+}
+/*
+function setPriority() {
+	priority=this.getAttribute('data-value');
+}
+
+function setSort() {
+	sorting=this.getAttribute('data-value');
+}
+
+var sorting = document.getElementsById([id$="sort-btn"]);
+*/
